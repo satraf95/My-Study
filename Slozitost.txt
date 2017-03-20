@@ -1,0 +1,21 @@
+	static int[] removeDuplicates(int[] data){
+		boolean[] encountered = new boolean[1000000];
+		int count = 0; // pocet unikatnich cisel
+		for (int i = 0;i<data.length;i++){
+			if (!encountered[data[i]]){
+				encountered[data[i]] = true;
+				count++;
+			}
+		}
+		encountered = new boolean[1000000]; 
+		int[] result = new int[count];
+		int index = 0;
+		for (int i = 0;i<data.length;i++){
+			if (!encountered[data[i]]){
+				result[index] = data[i];
+				encountered[data[i]] = true;
+				index++;
+			}
+		}
+		return result;
+	}
