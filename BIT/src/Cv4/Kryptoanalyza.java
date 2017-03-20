@@ -81,7 +81,7 @@ public class Kryptoanalyza {
 		System.out.print("\n");
 		System.out.println("Sifra 2:\n" + Sifra2(text));
 		
-
+//woihgwhg
 		
 
 	}
